@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>BlackJack</h1>
-    <p id="message-el">Ready to take your chances?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
+    <div class="content">
+        <h1>dhexmun's <span>BlackJack</span> game</h1>
+        <p id="message-el">Ready to take your chances?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
 
-    <div class="start-game"><button onclick="startGame()">START GAME</button></div><br>
-    <div class="new-card"><button onclick="newCard()">NEW CARD</button></div>
-    <p id="player-el"></p>
+        <div class="start-game"><button onclick="startGame()">START GAME</button></div><br>
+        <div class="new-card"><button onclick="newCard()">NEW CARD</button></div>
     
+        <p id="player-el"></p>
+        <a id="restart-el" onclick="playAgain()" href="index.html"></a>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

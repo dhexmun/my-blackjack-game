@@ -9,17 +9,29 @@ body {
     text-align: center;
 }
 
+.content {
+    box-sizing: border-box;
+    display: block;
+}
+
 h1 {
     color: goldenrod;
+    margin-bottom: 2px;
+}
+
+h1 > span {
+    color: #000000;
 }
 
 #message-el {
-    font-style: italic;
+    font-style: bold;
+    color: #f3575a;
+    margin-top: 2px;
 }
 
 button {
     background: goldenrod;
-    color: #016f32;
+    color: #00441e;
     width: 150px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -44,4 +56,18 @@ button:hover {
 
 #player-el {
     color: #000000;
+    margin-bottom: 3px;
 }
+
+#restart-el {
+    text-decoration: none;
+    color: #f3575a;
+}
+
+#restart-el:hover {
+    transition: all 0.7s ease;
+    transform: scale(1.2);
+    border-bottom: 0px solid #005eca;
+    border-width: 5px;
+    color: goldenrod;
+  }
