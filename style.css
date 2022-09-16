@@ -3,15 +3,26 @@ body {
     font-weight: bold;
     background-image: url(img/background.jpg);
     background-size: cover;
-    color: white;
+    background-repeat: no-repeat;
+    background-position: relative;
+    color: #005eca;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.content {
-    box-sizing: border-box;
-    display: block;
+.bucket {
+    border: 5px solid #005eca;
+    background: url(/img/mini-background.jpg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 60%;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 h1 {
@@ -68,6 +79,20 @@ button:hover {
     transition: all 0.7s ease;
     transform: scale(1.2);
     border-bottom: 0px solid #005eca;
+    border-radius: 5px;
     border-width: 5px;
     color: goldenrod;
-  }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(/img/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content {
+        min-height: 50%;
+    }
+}

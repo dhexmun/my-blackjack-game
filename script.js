@@ -43,7 +43,7 @@ function startGame() {
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     let cards = [firstCard, secondCard]
-    let sum = firstCard + secondCard
+    let sum = "firstCard" + "secondCard"
 
     renderGame()
 }
@@ -86,5 +86,10 @@ function newCard() {
     console.log(cards)
 
     renderGame()
+    }
+
+    if (isAlive === true && hasBlackJack === false) {
+    message = "How would you like to play your hand? 🙂"
+    messageEl.textContent = message
     }
 }
