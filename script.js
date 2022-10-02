@@ -58,14 +58,14 @@ function renderGame() {
 
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
-        message = "Do you want to draw a new card? 🙂"
+        message = "Do you want to draw a new card?🙂"
     } else if (sum === 21) {
-        message = "You've got BlackJack! 🥳"
+        message = "You've got BlackJack!🥳"
         hasBlackJack = true
         playAgain()
         console.log("Game Over!")
     } else {
-        message = "You're out of the game! 😭"
+        message = "You're out of the game!😭"
         isAlive = false
         playAgain()
         console.log("Game Over!")
@@ -78,7 +78,6 @@ function renderGame() {
 
 function newCard() {
     if (isAlive === true && hasBlackJack === false) {
-
     console.log("Drawing a new card from the deck....")
     let drawnCard = getRandomCard()
     sum += drawnCard
@@ -89,7 +88,7 @@ function newCard() {
     }
 
     if (isAlive === true && hasBlackJack === false) {
-    message = "How would you like to play your hand? 🙂"
+    message = "How would you like to play your hand?🙂"
     messageEl.textContent = message
     }
 }
